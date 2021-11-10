@@ -1,0 +1,4 @@
+*.pyc
+.coverage
+.vscode/settings.json
+dist/

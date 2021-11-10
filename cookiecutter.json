@@ -1,0 +1,10 @@
+{
+  "author_name": "Nuno Costa",
+  "author_email": "91nunocosta@gmail.com",
+  "author_github": "git@github.com:91nunocosta",
+  "project_name": "Python Package",
+  "project_kebab": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "project_slug": "{{ cookiecutter.project_kebab.replace('-', '_') }}",
+  "project_version": "0.1.0"
+}
+
