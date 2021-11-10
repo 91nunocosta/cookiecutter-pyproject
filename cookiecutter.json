@@ -5,6 +5,7 @@
   "project_name": "Python Package",
   "project_kebab": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
   "project_slug": "{{ cookiecutter.project_kebab.replace('-', '_') }}",
-  "project_version": "0.1.0"
+  "project_version": "0.1.0",
+  "project_description": "An empty python package."
 }
 

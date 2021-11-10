@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "{{cookiecutter.project_kebab}}"
 version = "{{cookiecutter.project_version}}"
-description = ""
+description = "{{cookiecutter.project_description}}"
 authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 
 [tool.poetry.dependencies]
