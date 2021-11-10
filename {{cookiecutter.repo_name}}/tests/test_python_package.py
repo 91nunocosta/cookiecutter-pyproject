@@ -1,4 +1,4 @@
-from python_package import __version__
+from {{cookiecutter.module_name}} import __version__
 
 
 def test_version():
