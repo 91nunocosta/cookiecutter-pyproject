@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "{{cookiecutter.project_kebab}}"
-version = "{{cookiecutter.project_version}}"
+name = "{{cookiecutter.package_name}}"
+version = "{{cookiecutter.package_version}}"
 description = "{{cookiecutter.project_description}}"
 authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 

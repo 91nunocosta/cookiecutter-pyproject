@@ -1,11 +1,12 @@
 {
   "author_name": "Nuno Costa",
   "author_email": "91nunocosta@gmail.com",
-  "author_github": "git@github.com:91nunocosta",
   "project_name": "Python Package",
-  "project_kebab": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-  "project_slug": "{{ cookiecutter.project_kebab.replace('-', '_') }}",
-  "project_version": "0.1.0",
-  "project_description": "An empty python package."
+  "project_description": "An empty python package.",
+  "github_host": "git@github.com:91nunocosta",
+  "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "package_name": "{{ cookiecutter.repo_name }}",
+  "package_version": "0.1.0",
+  "module_name": "{{ cookiecutter.package_name.replace('-', '_') }}"
 }
 
