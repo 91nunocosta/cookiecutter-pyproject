@@ -3,10 +3,10 @@
   "author_email": "91nunocosta@gmail.com",
   "project_name": "Python Package",
   "project_description": "An empty python package.",
-  "github_host": "git@github.com:91nunocosta",
-  "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-  "package_name": "{{ cookiecutter.repo_name }}",
+  "git_remote": "git@github.com:91nunocosta/python-package.git",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
   "package_version": "0.1.0",
-  "module_name": "{{ cookiecutter.package_name.replace('-', '_') }}"
+  "module_name": "{{ cookiecutter.package_name.replace('-', '_') }}",
+  "working_directory": "{{ cookiecutter.package_name }}"
 }
 

@@ -14,13 +14,13 @@
 1. Clone the repository.
 
    ```bash
-   git clone {{cookiecutter.github_host}}/{{cookiecutter.repo_name}}.git
+   git clone {{cookiecutter.git_remote}}
    ```
 
 2. Open the project directory.
 
    ```bash
-   cd {{cookiecutter.repo_name}}
+   cd {{cookiecutter.working_directory}}
    ```
 
 3. Install [_poetry_](https://python-poetry.org/) _package and dependency manager_.
