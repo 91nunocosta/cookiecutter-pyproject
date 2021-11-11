@@ -1,7 +1,6 @@
 "nox configuration." ""
 import nox_poetry
 
-
 PYTHON_VERSIONS = ["3.9"]
 SRC_DIR = "python_package"
 TEST_COVERAGE = 100
