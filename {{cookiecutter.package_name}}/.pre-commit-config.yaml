@@ -50,3 +50,13 @@ repos:
     hooks:
       - id: commitizen
         stages: [commit-msg]
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: pytest
+        language: system
+        require_serial: true
+        pass_filenames: false
+        verbose: true
