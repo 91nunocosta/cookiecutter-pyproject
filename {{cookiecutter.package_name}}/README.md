@@ -58,14 +58,14 @@ Chose the method that is more convenient to you, for example:
      nox
      ```
 
-   - only linting, using [_pre-commit_](https://pre-commit.com/), with:
+   - check source code using [_pre-commit_](https://pre-commit.com/), with:
 
      ```bash
-     nox -s lint
+     nox -s check_code
      ```
 
-   - only tests, using [_pytest_](https://docs.pytest.org/en/6.2.x/) and [_pytest-cov_](https://pytest-cov.readthedocs.io/en/latest/):
+   - test package, using [_pytest_](https://docs.pytest.org/en/6.2.x/) and [_pytest-cov_](https://pytest-cov.readthedocs.io/en/latest/):
 
      ```bash
-     nox -s tests
+     nox -s test_package
      ```

@@ -15,21 +15,19 @@ TEST_COVERAGE = 100
 
 
 @nox.session(python=None, reuse_venv=True)
-def check(session):
-    """Lint the source code."""
-    session.install("poetry")
-    session.run("poetry", "run", "pre-commit", "run", "--all-files", external=True)
+def check_source(session):
+    """Check the source code."""
+    session.run("pre-commit", "run", "--all-files", external=True)
 
 
 @nox.session(python=None, reuse_venv=True)
 def build(session):
     """Build the package from the source code."""
-    session.install("poetry")
     session.run("poetry", "build", "-f", "wheel")
 
 
 @nox.session(python="3.9")
-def tests_package(session):
+def test_package(session):
     """Test package."""
     session.install(f"./dist/{SRC_DIR}-{PROJECT_VERSION}-py3-none-any.whl")
     session.install("pytest")
