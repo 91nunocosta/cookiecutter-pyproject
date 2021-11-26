@@ -50,22 +50,40 @@ Chose the method that is more convenient to you, for example:
 1. Prepare the development environment, as described in
 [**How to prepare the development environment**](#how-to-prepare-the-development-environment).
 
-2. Run [_nox_](https://nox.thea.codes/en/stable/):
+2. Run katapy check command to verify the code quality:
 
    - all checks:
 
      ```bash
-     nox
+     katapy check
      ```
 
-   - check source code using [_pre-commit_](https://pre-commit.com/), with:
+   - only check source code using [_pre-commit_](https://pre-commit.com/):
 
      ```bash
-     nox -s check_code
+     katapy -s precommit.run
      ```
 
-   - test package, using [_pytest_](https://docs.pytest.org/en/6.2.x/) and [_pytest-cov_](https://pytest-cov.readthedocs.io/en/latest/):
+   - only test package, using [tox](https://tox.wiki/en/latest/) and [_pytest_](https://docs.pytest.org/en/6.2.x/):
 
      ```bash
-     nox -s test_package
+     katapy -s tox.run
+     ```. Run katapy check command to verify the code quality:
+
+   - all checks:
+
+     ```bash
+     katapy check
+     ```
+
+   - only check source code using [_pre-commit_](https://pre-commit.com/):
+
+     ```bash
+     katapy -s precommit.run
+     ```
+
+   - only test package, using [tox](https://tox.wiki/en/latest/) and [_pytest_](https://docs.pytest.org/en/6.2.x/):
+
+     ```bash
+     katapy -s tox.run
      ```
