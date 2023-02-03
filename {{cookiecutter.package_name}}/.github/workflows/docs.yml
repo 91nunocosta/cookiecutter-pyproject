@@ -1,0 +1,47 @@
+# inspired on
+# https://github.com/mitmproxy/pdoc/blob/main/.github/workflows/docs.yml
+name: build API reference documentation
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install poetry
+        run: pip install poetry pytest pytest-cov
+
+      - name: Install package from source
+        run: poetry install
+
+      - run: "poetry run pdoc -o pdocs/ \
+                --docformat google \
+                ./{{ cookiecutter.module_name }}"
+
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: pdocs/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: {% raw %}${{ steps.deployment.outputs.page_url }}{% endraw %}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v1

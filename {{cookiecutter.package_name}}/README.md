@@ -1,89 +1,40 @@
-# {{cookiecutter.project_name}}
+# Python Package
 
-{{cookiecutter.project_description}}
+[![Cookiecutter](https://img.shields.io/badge/built%20with-Cookiecutter-ff69b4.svg?logo=cookiecutter)](https://github.com/91nunocosta/python-package-cookiecutter)
 
-[![Built with Cookiecutter Python Package](https://img.shields.io/badge/built%20with-Cookiecutter%20Python%20Package-ff69b4.svg?logo=cookiecutter)](https://github.com/91nunocosta/python-package-cookiecutter)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-![Code Coverage](coverage.svg)
+[![GitHub](https://img.shields.io/github/license/91nunocosta/{{ cookiecutter.package_name }})](https://github.com/91nunocosta/{{ cookiecutter.package_name }}/blob/master/LICENSE)
+
+[![Codacy](https://app.codacy.com/project/badge/Grade/cb92f3f137454fae8697c7a6e7334f74)](https://www.codacy.com/gh/91nunocosta/{{ cookiecutter.package_name }}/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=91nunocosta/{{ cookiecutter.package_name }}&amp;utm_campaign=Badge_Grade)
+
+[![Codacy coverage](https://app.codacy.com/project/badge/Coverage/cb92f3f137454fae8697c7a6e7334f74)](https://www.codacy.com/gh/91nunocosta/{{ cookiecutter.package_name }}/dashboard?utm_source=github.com&utm_medium=referral&utm_content=91nunocosta/{{ cookiecutter.package_name }}&utm_campaign=Badge_Coverage)
+
+[![Build](https://img.shields.io/github/workflow/status/91nunocosta/{{ cookiecutter.package_name }}/Semantic%20Release)](https://github.com/91nunocosta/{{ cookiecutter.package_name }}/actions/workflows/release_package.yml)
+
+[![Python versions](https://img.shields.io/pypi/v/{{ cookiecutter.package_name }})](https://pypi.org/project/{{ cookiecutter.package_name }}/)
+
+[![PyPI version](https://img.shields.io/pypi/pyversions/{{ cookiecutter.package_name }})](https://pypi.org/project/{{ cookiecutter.package_name }}/)
+
+An dummy prototype package.
+
+## Installation
+
+```bash
+pip install {{ cookiecutter.package_name }}
+```
+
+## Usage
+
+```python
+   >>> from prototype_python_library
+   >>> import fib
+   >>> fib(0)
+   ... 0
+```
+
+For more details read the
+[documentation](https://91nunocosta.github.io/{{ cookiecutter.package_name }}/{{ cookiecutter.module_name }}.html).
 
 ## Contributing
 
-### How to prepare the development environment
-
-1. Clone the repository.
-
-   ```bash
-   git clone {{cookiecutter.git_remote}}
-   ```
-
-2. Open the project directory.
-
-   ```bash
-   cd {{cookiecutter.working_directory}}
-   ```
-
-3. Install [_poetry_](https://python-poetry.org/) _package and dependency manager_.
-Follow the [poetry installation guide](https://python-poetry.org/docs/#installation).
-Chose the method that is more convenient to you, for example:
-
-   ```bash
-   curl -sSL\
-        https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py \
-      | python -
-   ```
-
-4. Create a new virtual environment (managed by _poetry_) with the project dependencies.
-
-   ```bash
-   poetry install
-   ```
-
-5. Enter the virtual environment.
-
-   ```bash
-   poetry shell
-   ```
-
-### How to check code quality
-
-1. Prepare the development environment, as described in
-[**How to prepare the development environment**](#how-to-prepare-the-development-environment).
-
-2. Run katapy check command to verify the code quality:
-
-   - all checks:
-
-     ```bash
-     katapy check
-     ```
-
-   - only check source code using [_pre-commit_](https://pre-commit.com/):
-
-     ```bash
-     katapy -s precommit.run
-     ```
-
-   - only test package, using [tox](https://tox.wiki/en/latest/) and [_pytest_](https://docs.pytest.org/en/6.2.x/):
-
-     ```bash
-     katapy -s tox.run
-     ```. Run katapy check command to verify the code quality:
-
-   - all checks:
-
-     ```bash
-     katapy check
-     ```
-
-   - only check source code using [_pre-commit_](https://pre-commit.com/):
-
-     ```bash
-     katapy -s precommit.run
-     ```
-
-   - only test package, using [tox](https://tox.wiki/en/latest/) and [_pytest_](https://docs.pytest.org/en/6.2.x/):
-
-     ```bash
-     katapy -s tox.run
-     ```
+If you want to contribute, please read the [contributing guidelines](./CONTRIBUTING.md)
+and [code of conduct](./CODE_OF_CONDUCT.md).

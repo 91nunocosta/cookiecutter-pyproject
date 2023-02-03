@@ -1,12 +1,14 @@
 {
-  "author_name": "Nuno Costa",
-  "author_email": "91nunocosta@gmail.com",
-  "project_name": "Python Package",
-  "project_description": "An empty python package.",
-  "git_remote": "git@github.com:91nunocosta/python-package.git",
-  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-  "package_version": "0.1.0",
-  "module_name": "{{ cookiecutter.package_name.replace('-', '_') }}",
-  "working_directory": "{{ cookiecutter.package_name }}"
+    "author_name": "Nuno Costa",
+    "author_email": "91nunocosta@gmail.com",
+    "project_name": "Prototype Python Library",
+    "project_description": "{{ cookiecutter.project_name }}",
+    "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "package_version": "0.13.0",
+    "module_name": "{{ cookiecutter.package_name.replace('-', '_') }}",
+    "working_directory": "{{ cookiecutter.package_name }}",
+    "github_user": "91nunocosta",
+    "git_remote": "git@github.com:{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}.git",
+    "repository": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}/",
+    "docs": "https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.package_name }}/{{ cookiecutter.module_name }}.html"
 }
-

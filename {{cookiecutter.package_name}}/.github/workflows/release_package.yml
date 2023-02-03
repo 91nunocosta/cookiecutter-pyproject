@@ -1,0 +1,25 @@
+---
+name: Semantic Release
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    concurrency: release
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: {% raw %}${{ secrets.RELEASE_TOKEN }}{% endraw %}
+          fetch-depth: 0
+
+      - name: Python Semantic Release
+        uses: relekang/python-semantic-release@master
+        with:
+          github_token: {% raw %}${{ secrets.RELEASE_TOKEN }}{% endraw %}
+          repository_username: __token__
+          repository_password: {% raw %}${{ secrets.PYPI }}{% endraw %}

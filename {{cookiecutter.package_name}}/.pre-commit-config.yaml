@@ -3,60 +3,59 @@
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v4.4.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-toml
       - id: check-yaml
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.1.0
+    rev: v2.2.2
     hooks:
       - id: codespell
+        exclude: poetry.lock
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.26.3
+    rev: v1.29.0
     hooks:
       - id: yamllint
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.29.0
+    rev: v0.33.0
     hooks:
       - id: markdownlint
   - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
+    rev: 5.12.0
     hooks:
       - id: isort
         args: ["--profile", "black"]
   - repo: https://github.com/psf/black
-    rev: 21.10b0
+    rev: 23.1.0
     hooks:
       - id: black
-  - repo: https://github.com/PyCQA/flake8
-    rev: 4.0.1
+  - repo: https://github.com/PyCQA/prospector
+    rev: v1.8.4
     hooks:
-      - id: flake8
-        # for black compatibility
-        args: ["--max-line-length", "88"]
+      - id: prospector
+        args:
+          - "-W"
+          - "pyflakes"
+          # avoid pylint_django
+          - "--no-autodetect"
   - repo: https://github.com/PyCQA/bandit
-    rev: 1.7.0
+    rev: 1.7.4
     hooks:
       - id: bandit
         args: ["--exclude", "tests"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.910-1
+    rev: v0.991
     hooks:
       - id: mypy
+  - repo: https://github.com/terrencepreilly/darglint
+    rev: v1.8.1
+    hooks:
+      - id: darglint
+        exclude: "docs/.*"
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v2.20.0
+    rev: v2.40.0
     hooks:
       - id: commitizen
         stages: [commit-msg]
-
-  - repo: local
-    hooks:
-      - id: pytest
-        name: pytest
-        entry: pytest
-        language: system
-        require_serial: true
-        pass_filenames: false
-        verbose: true
