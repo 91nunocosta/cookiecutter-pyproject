@@ -41,7 +41,7 @@ Chose the method that is more convenient to you, for example:
 6. Install pre-commit verifications.
 
    ```bash
-   pre-commit install -t pre-commit, pre-post, commit-msg
+   pre-commit install -t pre-commit -t pre-push -t commit-msg
    ```
 
 ## Suggesting changes
