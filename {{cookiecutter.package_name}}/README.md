@@ -14,7 +14,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/pyversions/{{ cookiecutter.package_name }})](https://pypi.org/project/{{ cookiecutter.package_name }}/)
 
-An dummy prototype package.
+{{ cookiecutter. project_description }}
 
 ## Installation
 
