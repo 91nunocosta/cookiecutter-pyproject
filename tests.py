@@ -3,8 +3,18 @@ import subprocess
 from typing import List
 
 
-def test_scoffold_base_package(cookies):
+def test_scaffolding_base(cookies):
     """Test scaffolding a minimal Python package."""
+    result = cookies.bake()
+    assert result.exit_code == 0
+    assert result.exception is None
+    assert result.project_path.name == "prototype-python-library"
+    assert result.project_path.is_dir()
+    print("scaffold finished!")
+
+
+def test_linting_and_tests(cookies):
+    """Test scaffolding a minimal Python package and running pre-commit and tox."""
     result = cookies.bake()
     assert result.exit_code == 0
     assert result.exception is None
