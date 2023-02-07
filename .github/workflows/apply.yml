@@ -1,0 +1,32 @@
+---
+name: Apply cookiecutter to prototype project
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches: [master]
+    paths:
+      - "./{{cookiecutter.package_name}}"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install poetry
+        run: pip install poetry
+
+      - name: Install poetry environment
+        run: poetry install
+
+      - name: Run tests
+        run: poetry run cookicutter --no-interactive -o output
+
+      - name: Pushes to prototype Python project repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.APPLY_TOKEN }}
+        with:
+          source-directory: 'output'
+          destination-github-username: '91nunocosta'
+          destination-repository-name: 'prototype-python-library'
+          user-email: 91nunocosta@gmail.com
+          target-branch: master
