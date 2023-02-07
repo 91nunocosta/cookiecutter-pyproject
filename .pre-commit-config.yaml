@@ -60,10 +60,17 @@ repos:
           - "--no-autodetect"
         exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*"
 
-  - repo: https://github.com/rhysd/actionlint
-    rev: main
+  - repo: local
     hooks:
-      - id: actionlint-docker
+      - id: actionlint
+        name: Lint GitHub Actions workflow files
+        description: Runs actionlint to lint GitHub Actions workflow files
+        types: ["yaml"]
+        files: "^.github/workflows/"
+        entry: actionlint
+        language: golang
+        additional_dependencies:
+          - github.com/rhysd/actionlint/cmd/actionlint@latest
 
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v2.40.0
