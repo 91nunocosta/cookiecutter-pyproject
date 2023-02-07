@@ -7,7 +7,7 @@ If you want to test or change the source code, prepare your local environment.
 1. Clone the repository.
 
    ```bash
-   git clone get@github.com/91nunocosta/python-package-cookiecutter.git
+   git clone git@github.com/91nunocosta/python-package-cookiecutter.git
    ```
 
 2. Open the project directory.
