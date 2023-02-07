@@ -5,7 +5,9 @@ description = ""
 authors = ["91nunocosta <91nunocosta@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "python_package_cookiecutter"}]
+packages = [
+    { include = "python_package_cookiecutter.py" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
