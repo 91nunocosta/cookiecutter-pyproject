@@ -18,14 +18,14 @@ jobs:
         run: poetry install
 
       - name: Run tests
-        run: poetry run cookicutter --no-interactive -o output
+        run: poetry run cookiecutter . --no-input
 
       - name: Pushes to prototype Python project repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.APPLY_TOKEN }}
         with:
-          source-directory: 'output'
+          source-directory: prototype-python-library/
           destination-github-username: '91nunocosta'
           destination-repository-name: 'prototype-python-library'
           user-email: 91nunocosta@gmail.com
