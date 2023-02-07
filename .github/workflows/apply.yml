@@ -4,7 +4,7 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches: [master]
     paths:
-      - "./{{cookiecutter.package_name}}/**"
+      - "./\\{\\{cookiecutter.package_name\\}\\}/**"
 jobs:
   test:
     runs-on: ubuntu-latest
