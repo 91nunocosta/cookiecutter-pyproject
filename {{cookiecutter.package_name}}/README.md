@@ -14,7 +14,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/pyversions/{{ cookiecutter.package_name }})](https://pypi.org/project/{{ cookiecutter.package_name }}/)
 
-An dummy prototype package.
+{{ cookiecutter. project_description }}
 
 ## Installation
 
@@ -31,7 +31,7 @@ pip install {{ cookiecutter.package_name }}
    ... 0
 ```
 
-For more details read the
+For more details, read the
 [documentation](https://91nunocosta.github.io/{{ cookiecutter.package_name }}/{{ cookiecutter.module_name }}.html).
 
 ## Contributing
