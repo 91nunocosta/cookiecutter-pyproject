@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-package-cookiecutter"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 authors = ["91nunocosta <91nunocosta@gmail.com>"]
 license = "MIT"
@@ -27,3 +27,12 @@ build-backend = "poetry.core.masonry.api"
 [tool.pytest.ini_options]
 addopts = "-s"
 testpaths = "tests.py"
+
+[tool.semantic_release]
+version_variable = [
+    "pyproject.toml:version"
+]
+branch = "master"
+upload_to_pypi = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
