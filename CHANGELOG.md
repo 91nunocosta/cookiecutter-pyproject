@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.2 (2023-02-08)
+### Fix
+* CI/CD and README ([`112cbc2`](https://github.com/91nunocosta/python-package-cookiecutter/commit/112cbc2a99baacfa59399332d18b1c793c4e28e7))
+
 ## v0.2.1 (2023-02-08)
 ### Fix
 * **tox:** Fix README and docstrings tests ([`20ed015`](https://github.com/91nunocosta/python-package-cookiecutter/commit/20ed015f6b51ec0fb5c262c09bc9ba5581a44ce6))
