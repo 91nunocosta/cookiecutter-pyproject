@@ -1,6 +1,11 @@
 ---
 name: Test cookiecutter
 on:  # yamllint disable-line rule:truthy
+  push:
+    branches: [master]
+    paths:
+      - pytest.py
+      - "*cookiecutter.package_name*/**"
   pull_request:
     paths:
       - pytest.py
