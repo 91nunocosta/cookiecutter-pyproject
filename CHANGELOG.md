@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-02-08)
+### Fix
+* **tox:** Fix README and docstrings tests ([`20ed015`](https://github.com/91nunocosta/python-package-cookiecutter/commit/20ed015f6b51ec0fb5c262c09bc9ba5581a44ce6))
+
 ## v0.2.0 (2023-02-08)
 ### Feature
 * **README:** Add cookicutter version to target README ([`55e1a3e`](https://github.com/91nunocosta/python-package-cookiecutter/commit/55e1a3e70579b76cc0fbaa510e6b27e00cc56941))
