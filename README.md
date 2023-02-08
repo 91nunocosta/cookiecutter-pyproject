@@ -5,10 +5,8 @@
 [![GitHub branch checks state](https://img.shields.io/github/checks-status/91nunocosta/python-package-cookiecutter/master)](https://github.com/91nunocosta/python-package-cookiecutter)
 [![GitHub branch checks state](https://img.shields.io/github/checks-status/91nunocosta/prototype-python-library/master)](https://github.com/91nunocosta/prototype-python-library)
 
-This repository provides a [cookiecutter](https://github.com/cookiecutter/cookiecutter) template
-for python projects.
-
-This cookiecutter generates the example project [91nunocosta/prototype-python-library/](https://github.com/91nunocosta/prototype-python-library).
+This repository provides a [cookiecutter](https://github.com/cookiecutter/cookiecutter) for Python projects.
+It generates the example project [91nunocosta/prototype-python-library](https://github.com/91nunocosta/prototype-python-library).
 
 ## Usage
 
