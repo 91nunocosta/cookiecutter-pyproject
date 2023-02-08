@@ -28,7 +28,7 @@ The Python API library template provides the following:
 * [pre-commit](https://pre-commit.com/) configuration for linting with multiple linters
   (see [.pre-commit-config.yaml](./{{cookiecutter.package_name}}/.pre-commit-config.yaml))
 * [tox](https://tox.wiki/en/latest/) configuration
-* [GitHub workflows](https://docs.github.com/en/actions/using-workflows) for:
+* [GitHub workflows](https://docs.github.com/en/actions/using-workflows) to:
   * lint commit messages according to [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/)
   * test with _tox_
   * release the package with [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/)
