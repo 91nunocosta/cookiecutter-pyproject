@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-02-08)
+### Feature
+* **README:** Add cookicutter version to target README ([`55e1a3e`](https://github.com/91nunocosta/python-package-cookiecutter/commit/55e1a3e70579b76cc0fbaa510e6b27e00cc56941))
+
 ## v0.1.0 (2023-02-08)
 ### Feature
 * Remove older python versions ([#11](https://github.com/91nunocosta/python-package-cookiecutter/issues/11)) ([`af44da4`](https://github.com/91nunocosta/python-package-cookiecutter/commit/af44da48a3e262b5bd174bf75ee9cfc3d90edbf8))

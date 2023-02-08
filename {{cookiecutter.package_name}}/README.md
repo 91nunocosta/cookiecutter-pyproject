@@ -1,6 +1,6 @@
 # {{ cookiecutter.project_name }}
 
-[![Cookiecutter](https://img.shields.io/badge/built%20with-Cookiecutter-ff69b4.svg?logo=cookiecutter)](https://github.com/91nunocosta/python-package-cookiecutter/releases/tag/v0.1.0)
+[![Cookiecutter](https://img.shields.io/badge/built%20with-Cookiecutter-ff69b4.svg?logo=cookiecutter)](https://github.com/91nunocosta/python-package-cookiecutter/releases/tag/v0.2.0)
 
 [![GitHub](https://img.shields.io/github/license/91nunocosta/{{ cookiecutter.package_name }})](https://github.com/91nunocosta/{{ cookiecutter.package_name }}/blob/master/LICENSE)
 
