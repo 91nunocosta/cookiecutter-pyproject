@@ -25,10 +25,10 @@ pip install {{ cookiecutter.package_name }}
 ## Usage
 
 ```python
-   >>> from prototype_python_library
-   >>> import fib
-   >>> fib(0)
-   ... 0
+>>> from prototype_python_library import fib
+>>> fib(0)
+0
+
 ```
 
 For more details, read the

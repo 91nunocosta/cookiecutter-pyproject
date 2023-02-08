@@ -1,11 +1,18 @@
 ---
 name: Test package
 on:  # yamllint disable-line rule:truthy
+  push:
+    branches: [master]
+    paths:
+      - '**.py'
+      - 'pyproject.toml'
+      - 'README.md'
   pull_request:
     paths:
       - '**.py'
       - 'pyproject.toml'
-      - '!docs/**'
+      - 'README.md'
+
 jobs:
   test:
     runs-on: ubuntu-latest
