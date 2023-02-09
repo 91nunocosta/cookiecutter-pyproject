@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.1 (2023-02-09)
+### Fix
+* Fix docs GH workflow ([`154f5aa`](https://github.com/91nunocosta/python-package-cookiecutter/commit/154f5aac2b637ab43101c90b4553ebc7bd897c63))
+
 ## v0.6.0 (2023-02-09)
 ### Feature
 * Trim down poetry and tox deps ([`4006942`](https://github.com/91nunocosta/python-package-cookiecutter/commit/40069420d57c408e65c82709838c7257afa65e25))
