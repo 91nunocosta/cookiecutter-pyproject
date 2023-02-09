@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-02-09)
+### Feature
+* **commitlit:** Do not trigger on push to master ([`866d511`](https://github.com/91nunocosta/python-package-cookiecutter/commit/866d51134225b9bf1218d0072b4277be4529b2b2))
+
+### Documentation
+* **README:** Fix README ([`5121083`](https://github.com/91nunocosta/python-package-cookiecutter/commit/51210836d46112ed926b05ce00d11aa40d12f88a))
+* **README:** Improve README ([`f259d11`](https://github.com/91nunocosta/python-package-cookiecutter/commit/f259d11652b685a4dc39a79231999011e193dc4c))
+* **README:** Improve README ([`5e80efe`](https://github.com/91nunocosta/python-package-cookiecutter/commit/5e80efef416bad4e15e8aa912993497a3ec9b86a))
+* **README:** Improve description ([`d3a1aa2`](https://github.com/91nunocosta/python-package-cookiecutter/commit/d3a1aa2f5eec117cb9597b2a5ffc5e53530dca3f))
+
 ## v0.2.2 (2023-02-08)
 ### Fix
 * CI/CD and README ([`112cbc2`](https://github.com/91nunocosta/python-package-cookiecutter/commit/112cbc2a99baacfa59399332d18b1c793c4e28e7))
