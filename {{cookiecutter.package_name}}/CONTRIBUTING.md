@@ -29,7 +29,7 @@ Chose the method that is more convenient to you, for example:
 4. Create a new virtual environment (managed by _poetry_) with the project dependencies.
 
    ```bash
-   poetry install
+   poetry install --with lint --with test
    ```
 
 5. Enter the virtual environment.
