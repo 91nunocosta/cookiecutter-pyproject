@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.1 (2023-02-09)
+### Fix
+* Fix cookiecutter variables file ([`776f252`](https://github.com/91nunocosta/python-package-cookiecutter/commit/776f252e6fab4e63b72fcd6abab71886da230a42))
+
 ## v0.7.0 (2023-02-09)
 ### Feature
 * Trim down tox ([`9738ce1`](https://github.com/91nunocosta/python-package-cookiecutter/commit/9738ce1409b7f20c17569423add6933a67c3473b))
