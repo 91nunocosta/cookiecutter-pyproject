@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2023-02-09)
+### Feature
+* **pre-commit:** Use only prospector to lint python ([`242bb73`](https://github.com/91nunocosta/python-package-cookiecutter/commit/242bb7338dfdda1eda38ffd33621c6422af9cc94))
+
 ## v0.4.1 (2023-02-09)
 ### Fix
 * **CD:** Fix test GH workflow ([`4a210a6`](https://github.com/91nunocosta/python-package-cookiecutter/commit/4a210a605219f9eed5e31cbbcdde6497caa1df43))
