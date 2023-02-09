@@ -11,5 +11,4 @@
     "git_remote": "git@github.com:{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}.git",
     "repository": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}/",
     "docs": "https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.package_name }}/{{ cookiecutter.module_name }}.html",
-    "python_versions": ["10.0", "11.0"]
 }
