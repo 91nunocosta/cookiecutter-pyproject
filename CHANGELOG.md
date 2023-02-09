@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.0 (2023-02-09)
+### Feature
+* Trim down tox ([`9738ce1`](https://github.com/91nunocosta/python-package-cookiecutter/commit/9738ce1409b7f20c17569423add6933a67c3473b))
+
 ## v0.6.2 (2023-02-09)
 ### Fix
 * Remove redundant codecov GH workflow ([`5d27197`](https://github.com/91nunocosta/python-package-cookiecutter/commit/5d271970b2deeb0223d0f2321d59cfe70eb61018))
