@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.10.0 (2023-02-09)
+### Feature
+* Set version to 0.1.0 ([`a6ae23b`](https://github.com/91nunocosta/python-package-cookiecutter/commit/a6ae23bc9b2e5c0589c550238f55954497a2ce4b))
+
 ## v0.9.0 (2023-02-09)
 ### Feature
 * Tox do not install package with poetry ([`5e90b1f`](https://github.com/91nunocosta/python-package-cookiecutter/commit/5e90b1f9dddb49c61c86a6474cc3337ba121397d))
