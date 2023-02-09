@@ -20,15 +20,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install poetry
-        run: pip install poetry pytest pytest-cov
+      - name: Install pdocs
+        run: pip install pdoc
 
-      - name: Install package from source
-        run: poetry install
-
-      - run: "poetry run pdoc -o pdocs/ \
-                --docformat google \
-                ./{{ cookiecutter.module_name }}"
+      - run: pdoc -o pdocs --docformat google ./{{ cookiecutter.module_name }}
 
       - uses: actions/upload-pages-artifact@v1
         with:
