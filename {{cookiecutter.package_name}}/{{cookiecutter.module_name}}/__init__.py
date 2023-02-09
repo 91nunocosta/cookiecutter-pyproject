@@ -1,6 +1,6 @@
 """{{ cookiecutter.project_description }}"""
 
-__version__ = "0.13.0"
+__version__ = "0.1.0"
 
 
 def fib(number: int) -> int:
