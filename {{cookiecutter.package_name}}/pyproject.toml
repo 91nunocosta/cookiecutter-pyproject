@@ -38,7 +38,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.semantic_release]
 version_variable = [
-    "prototype_python_library/__init__.py:__version__",
+    "{{ cookiecutter.module_name }}/__init__.py:__version__",
     "pyproject.toml:version"
 ]
 branch = "master"

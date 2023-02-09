@@ -25,7 +25,7 @@ pip install {{ cookiecutter.package_name }}
 ## Usage
 
 ```python
->>> from prototype_python_library import fib
+>>> from {{ cookiecutter.module_name }} import fib
 >>> fib(0)
 0
 
