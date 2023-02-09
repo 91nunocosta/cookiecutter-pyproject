@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.0 (2023-02-09)
+### Feature
+* Trim down poetry and tox deps ([`4006942`](https://github.com/91nunocosta/python-package-cookiecutter/commit/40069420d57c408e65c82709838c7257afa65e25))
+
 ## v0.5.1 (2023-02-09)
 ### Fix
 * Linting ([`61cd3b9`](https://github.com/91nunocosta/python-package-cookiecutter/commit/61cd3b92ecfbc89c1119f68c76def69d401c3988))
