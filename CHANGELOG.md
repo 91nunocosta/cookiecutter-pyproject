@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.2 (2023-02-09)
+### Fix
+* Fix cookiecutter variables file ([`90b7ba1`](https://github.com/91nunocosta/python-package-cookiecutter/commit/90b7ba198e9b6c9aefac5048150c1847e79d9033))
+
 ## v0.7.1 (2023-02-09)
 ### Fix
 * Fix cookiecutter variables file ([`776f252`](https://github.com/91nunocosta/python-package-cookiecutter/commit/776f252e6fab4e63b72fcd6abab71886da230a42))

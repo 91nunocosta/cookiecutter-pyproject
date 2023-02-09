@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-package-cookiecutter"
-version = "0.7.1"
+version = "0.7.2"
 description = ""
 authors = ["91nunocosta <91nunocosta@gmail.com>"]
 license = "MIT"
