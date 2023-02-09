@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.2 (2023-02-09)
+### Fix
+* Remove redundant codecov GH workflow ([`5d27197`](https://github.com/91nunocosta/python-package-cookiecutter/commit/5d271970b2deeb0223d0f2321d59cfe70eb61018))
+
 ## v0.6.1 (2023-02-09)
 ### Fix
 * Fix docs GH workflow ([`154f5aa`](https://github.com/91nunocosta/python-package-cookiecutter/commit/154f5aac2b637ab43101c90b4553ebc7bd897c63))
