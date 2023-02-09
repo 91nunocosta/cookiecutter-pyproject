@@ -1,8 +1,9 @@
 # inspired on
 # https://github.com/mitmproxy/pdoc/blob/main/.github/workflows/docs.yml
+---
 name: build API reference documentation
 
-on:
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - master

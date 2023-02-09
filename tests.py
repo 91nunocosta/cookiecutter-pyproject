@@ -29,5 +29,6 @@ def test_linting_and_tests(cookies):
 
     run(["git", "init"])
     run(["poetry", "install"])
+    run(["git", "add", "."])
     run(["poetry", "run", "pre-commit", "run", "--all-files"])
     run(["poetry", "run", "tox"])

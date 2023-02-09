@@ -4,7 +4,7 @@ inherits:
 
 max-line-length: 88
 
-autodetect: False
+autodetect: false
 
 pep257:
   # google convention
@@ -12,9 +12,9 @@ pep257:
             D413]
 
 mypy:
-  run: True
+  run: true
 
 bandit:
-  run: True
+  run: true
   options:
     exclude: tests
