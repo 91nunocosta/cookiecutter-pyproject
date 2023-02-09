@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.1 (2023-02-09)
+### Fix
+* Linting ([`61cd3b9`](https://github.com/91nunocosta/python-package-cookiecutter/commit/61cd3b92ecfbc89c1119f68c76def69d401c3988))
+
 ## v0.5.0 (2023-02-09)
 ### Feature
 * **pre-commit:** Use only prospector to lint python ([`242bb73`](https://github.com/91nunocosta/python-package-cookiecutter/commit/242bb7338dfdda1eda38ffd33621c6422af9cc94))
