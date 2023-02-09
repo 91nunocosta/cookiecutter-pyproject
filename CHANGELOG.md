@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-02-09)
+### Feature
+* Improve markdown files generation ([`fac6ece`](https://github.com/91nunocosta/python-package-cookiecutter/commit/fac6ecef5d0d2b06cad88dc71c7eddb16e7850a1))
+
 ## v0.3.0 (2023-02-09)
 ### Feature
 * **commitlit:** Do not trigger on push to master ([`866d511`](https://github.com/91nunocosta/python-package-cookiecutter/commit/866d51134225b9bf1218d0072b4277be4529b2b2))
