@@ -46,9 +46,9 @@ version_variable = [
 branch = "master"
 build_command = "pip install poetry && poetry build"
 upload_to_release = true
-{%- if cookiecutter.opensource == "yes" %}
+{% if cookiecutter.opensource == "yes" %}
 upload_to_repository = true
-{%- elif cookiecutter.opensource == "no" %}
+{% elif cookiecutter.opensource == "no" %}
 upload_to_repository = false
 repository_url = ""
 {% endif -%}
