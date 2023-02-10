@@ -1,8 +1,10 @@
 # {{ cookiecutter.project_name }}
-
+{% if cookiecutter.opensource == "yes" %}
 [![Cookiecutter](https://img.shields.io/badge/built%20with-Cookiecutter-ff69b4.svg?logo=cookiecutter)](https://github.com/91nunocosta/python-package-cookiecutter/releases/tag/v0.9.0)
 
 [![GitHub](https://img.shields.io/github/license/{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }})](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}/blob/master/LICENSE)
+
+![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
 
 [![Codacy](https://app.codacy.com/project/badge/Grade/cb92f3f137454fae8697c7a6e7334f74)](https://www.codacy.com/gh/{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content={{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}&amp;utm_campaign=Badge_Grade)
 
@@ -13,7 +15,7 @@
 [![Python versions](https://img.shields.io/pypi/v/{{ cookiecutter.package_name }})](https://pypi.org/project/{{ cookiecutter.package_name }}/)
 
 [![PyPI version](https://img.shields.io/pypi/pyversions/{{ cookiecutter.package_name }})](https://pypi.org/project/{{ cookiecutter.package_name }}/)
-
+{% endif %}
 {{ cookiecutter. project_description }}
 
 ## Installation
