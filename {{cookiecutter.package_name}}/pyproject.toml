@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "{{cookiecutter.package_name}}"
 version = "0.1.0"
-{%- if cookiecutter.opensource == "yes" %}
+{% if cookiecutter.opensource == "yes" -%}
 license = "MIT"
 {% endif -%}
 description = "{{cookiecutter.project_description}}"
@@ -51,4 +51,4 @@ upload_to_repository = true
 {%- elif cookiecutter.opensource == "no" %}
 upload_to_repository = false
 repository_url = ""
-{% endif %}
+{% endif -%}
