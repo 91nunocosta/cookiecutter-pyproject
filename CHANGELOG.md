@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.10.0 (2023-02-10)
+### Feature
+* **README:** Improve README ([`b758d30`](https://github.com/91nunocosta/python-package-cookiecutter/commit/b758d30d930b0d26dc7b3248a04bba581ff6970b))
+* **options:** Add opensource option ([`2d29821`](https://github.com/91nunocosta/python-package-cookiecutter/commit/2d298216d18d97a21c1da666832922dabaf178af))
+* **lint:** Enable mypy strict mode ([`dbdd8d0`](https://github.com/91nunocosta/python-package-cookiecutter/commit/dbdd8d01d5d7dda2df54f519178c149840de0829))
+* Set version to 0.1.0 ([`a6ae23b`](https://github.com/91nunocosta/python-package-cookiecutter/commit/a6ae23bc9b2e5c0589c550238f55954497a2ce4b))
+
+### Fix
+* **linting:** Fix pyproject.toml ([`131ceed`](https://github.com/91nunocosta/python-package-cookiecutter/commit/131ceed00d49c937aec399ab0d7ab2d638eeddc7))
+
 ## v0.9.0 (2023-02-09)
 ### Feature
 * Tox do not install package with poetry ([`5e90b1f`](https://github.com/91nunocosta/python-package-cookiecutter/commit/5e90b1f9dddb49c61c86a6474cc3337ba121397d))
