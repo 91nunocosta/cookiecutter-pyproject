@@ -2,10 +2,19 @@
 import subprocess
 from typing import List
 
+import pytest
 
-def test_scaffolding_base(cookies):
+
+@pytest.mark.parametrize(
+    "extra_context",
+    [
+        {"opensource": "no"},
+    ],
+    ids=["non-opensource"],
+)
+def test_scaffolding(cookies, extra_context):
     """Test scaffolding a minimal Python package."""
-    result = cookies.bake()
+    result = cookies.bake(extra_context=extra_context)
     assert result.exit_code == 0
     assert result.exception is None
     assert result.project_path.name == "prototype-python-library"

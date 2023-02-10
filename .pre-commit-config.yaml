@@ -47,7 +47,7 @@ repos:
     rev: 23.1.0
     hooks:
       - id: black
-        exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*"
+        exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*|hooks"
 
   - repo: https://github.com/PyCQA/prospector
     rev: v1.8.4
@@ -58,8 +58,7 @@ repos:
           - "pyflakes"
           # avoid pylint_django
           - "--no-autodetect"
-        exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*"
-
+        exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*|hooks"
   - repo: local
     hooks:
       - id: actionlint
