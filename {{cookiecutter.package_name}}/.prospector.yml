@@ -13,6 +13,8 @@ pep257:
 
 mypy:
   run: true
+  options:
+    strict: true
 
 bandit:
   run: true
