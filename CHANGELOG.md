@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.10.1 (2023-02-10)
+### Fix
+* **lint:** Fix pyproject.toml ([`d3b52aa`](https://github.com/91nunocosta/python-package-cookiecutter/commit/d3b52aafb91aa4f54e0e4914319ae05d4c821766))
+
 ## v0.10.0 (2023-02-10)
 ### Feature
 * **README:** Improve README ([`b758d30`](https://github.com/91nunocosta/python-package-cookiecutter/commit/b758d30d930b0d26dc7b3248a04bba581ff6970b))
