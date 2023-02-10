@@ -25,7 +25,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-addopts = "-s"
+addopts = "-s -x"
 testpaths = "tests.py"
 
 [tool.semantic_release]
