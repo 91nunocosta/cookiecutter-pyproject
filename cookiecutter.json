@@ -11,5 +11,7 @@
     "repository": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.package_name }}/",
     "docs": "https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.package_name }}/{{ cookiecutter.module_name }}.html",
     "year": 2023,
-    "opensource": ["yes", "no"]
+    "opensource": ["yes", "no"],
+    "cli": ["yes", "no"],
+    "cli_app_name": "{{ cookiecutter.package_name }}"
 }

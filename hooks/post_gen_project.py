@@ -5,6 +5,10 @@ OPENSOURCE_FILES: List[Path] = [
     Path("CODE_OF_CONDUCT.md"),
     Path("LICENSE"),
 ]
+CLI_FILES: List[Path] = [
+    Path(".") / "{{ cookiecutter.module_name }}" / "cli.py",
+    Path(".") / "tests" / "test_cli.py",
+]
 
 def remove(paths: List[Path]) -> None:
     for path in paths:
@@ -14,3 +18,4 @@ def remove(paths: List[Path]) -> None:
             path.unlink()
 
 {% if cookiecutter.opensource != "yes" %}remove(OPENSOURCE_FILES) {% endif %}
+{% if cookiecutter.cli != "yes" %}remove(CLI_FILES) {% endif %}

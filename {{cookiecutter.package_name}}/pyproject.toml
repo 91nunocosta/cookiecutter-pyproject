@@ -10,8 +10,16 @@ readme = "README.md"
 repository = "{{ cookiecutter.repository }}"
 documentation = "{{ cookiecutter.docs }}"
 
+{% if cookiecutter.cli == "yes" -%}
+[tool.poetry.scripts]
+{{ cookiecutter.cli_app_name }} = "{{ cookiecutter.module_name  }}.cli:app"
+{% endif -%}
+
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
+{% if cookiecutter.cli == "yes" -%}
+typer = {extras = ["all"], version = "^0.7.0"}
+{% endif -%}
 
 [tool.poetry.group.lint]
 optional = true
