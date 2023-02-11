@@ -20,6 +20,9 @@ jobs:
       - name: Run tests
         run: poetry run cookiecutter . --no-input
 
+      - name: Lock poetry dependencies
+        run: poetry --directory=prototype-python-library lock
+
       - name: Pushes to prototype Python project repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
