@@ -1,5 +1,5 @@
 ---
-name: Test package
+name: Run tests
 on:  # yamllint disable-line rule:truthy
   push:
     branches: [master]
@@ -7,11 +7,13 @@ on:  # yamllint disable-line rule:truthy
       - '**.py'
       - 'pyproject.toml'
       - 'README.md'
+      - '.github/workflows/test.yml'
   pull_request:
     paths:
       - '**.py'
       - 'pyproject.toml'
       - 'README.md'
+      - '.github/workflows/test.yml'
 
 jobs:
   test:
