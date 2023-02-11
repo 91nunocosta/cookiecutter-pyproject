@@ -7,6 +7,9 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - master
+    paths:
+      - "**.py"
+      - ".github/workflows/docs.yml"
 
 permissions:
   contents: read
@@ -16,16 +19,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+
+      - name: Install poetry
+        run: pipx install poetry
+
+      - name: cache poetry environment
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.10'
+          cache: 'poetry'
 
-      - name: Install pdocs
-        run: pip install pdoc
+      - name: install package
+        run: poetry install --with docs
 
-      - run: pdoc -o pdocs --docformat google ./{{ cookiecutter.module_name }}
+      - name: generate documentation HTML
+        run: poetry run pdoc -o pdocs --docformat google ./{{ cookiecutter.module_name }}
 
-      - uses: actions/upload-pages-artifact@v1
+      - name: upload documentation HTML to GitHub pages
+        uses: actions/upload-pages-artifact@v1
         with:
           path: pdocs/
 
