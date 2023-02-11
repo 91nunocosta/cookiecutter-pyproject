@@ -2,7 +2,7 @@
 from {{ cookiecutter.module_name }} import fib
 
 
-def test_fib():
+def test_fib() -> None:
     """Test fib function."""
     assert fib(0) == 0
     assert fib(1) == 1
