@@ -28,11 +28,16 @@ optional = true
 pytest = "^7.2.1"
 pytest-cov = "^3.0.0"
 
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+pdoc = "^12.3.1"
+
 [tool.poetry.group.cd]
 optional = true
 
 [tool.poetry.group.cd.dependencies]
-pdoc = "^12.3.1"
 python-semantic-release = "^7.33.1"
 tox = "^3.24.4"
 
