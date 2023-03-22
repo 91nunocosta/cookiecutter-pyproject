@@ -33,7 +33,7 @@ version_variable = [
     "pyproject.toml:version"
 ]
 version_pattern = [
-    "./{{cookiecutter.package_name}}/README.md:https://github.com/91nunocosta/python-package-cookiecutter/releases/tag/v{version}"
+    "./{{cookiecutter.package_name}}/README.md:https://github.com/91nunocosta/cookiecutter-pyproject/releases/tag/v{version}"
 ]
 branch = "master"
 upload_to_pypi = false

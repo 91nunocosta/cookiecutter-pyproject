@@ -7,13 +7,13 @@ If you want to test or change the source code, prepare your local environment.
 1. Clone the repository.
 
    ```bash
-   git clone git@github.com/91nunocosta/python-package-cookiecutter.git
+   git clone git@github.com/91nunocosta/cookiecutter-pyproject.git
    ```
 
 2. Open the project directory.
 
    ```bash
-   cd python-package-cookiecutter
+   cd cookiecutter-pyproject
    ```
 
 3. Install [_poetry_](https://python-poetry.org/) _package and dependency manager_.
@@ -54,7 +54,7 @@ Make sure your PR passes the _quality assurance_ checks:
 
 1. [pre-commit.ci](https://results.pre-commit.ci/repo/github/426730867)
 
-2. [tests](https://github.com/91nunocosta/python-package-cookiecutter/actions/workflows/test.yml)
+2. [tests](https://github.com/91nunocosta/cookiecutter-pyproject/actions/workflows/test.yml)
 
 You can run these checks locally.
 
