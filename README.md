@@ -1,8 +1,8 @@
 # Cookiecuter for Python projects
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/91nunocosta/python-package-cookiecutter)](https://github.com/91nunocosta/python-package-cookiecutter/releases)
-[![GitHub](https://img.shields.io/github/license/91nunocosta/python-package-cookiecutter)](https://github.com/91nunocosta/python-package-cookiecutter/blob/master/LICENSE)
-[![GitHub branch checks state](https://img.shields.io/github/checks-status/91nunocosta/python-package-cookiecutter/master)](https://github.com/91nunocosta/python-package-cookiecutter)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/91nunocosta/cookiecutter-pyproject)](https://github.com/91nunocosta/cookiecutter-pyproject/releases)
+[![GitHub](https://img.shields.io/github/license/91nunocosta/cookiecutter-pyproject)](https://github.com/91nunocosta/cookiecutter-pyproject/blob/master/LICENSE)
+[![GitHub branch checks state](https://img.shields.io/github/checks-status/91nunocosta/cookiecutter-pyproject/master)](https://github.com/91nunocosta/cookiecutter-pyproject)
 [![GitHub branch checks state](https://img.shields.io/github/checks-status/91nunocosta/prototype-python-library/master)](https://github.com/91nunocosta/prototype-python-library)
 
 This repository provides a [cookiecutter](https://github.com/cookiecutter/cookiecutter)
@@ -14,7 +14,7 @@ It generates the example project [91nunocosta/prototype-python-library](https://
 To create a new Python project, run the following command, and answer all prompts.
 
 ```bash
-cookiecutter https@github.com/91nunocosta/python-package-cookiecutter.git
+cookiecutter https@github.com/91nunocosta/cookiecutter-pyproject.git
 ```
 
 ## Project types
