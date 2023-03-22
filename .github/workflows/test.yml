@@ -4,10 +4,12 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches: [master]
     paths:
+      - "pyproject.toml"
       - pytest.py
       - "*cookiecutter.package_name*/**"
   pull_request:
     paths:
+      - "pyproject.toml"
       - pytest.py
       - "*cookiecutter.package_name*/**"
 jobs:
