@@ -20,7 +20,7 @@ jobs:
         run: pip install poetry
 
       - name: Install poetry environment
-        run: poetry install --with=lint --with=test --with=cd
+        run: poetry install
 
       - name: Run tests
         run: poetry run pytest
