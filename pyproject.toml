@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python-package-cookiecutter"
+name = "cookiecutter-pyproject"
 version = "0.10.1"
 description = ""
 authors = ["91nunocosta <91nunocosta@gmail.com>"]
