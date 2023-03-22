@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.11.0 (2023-03-22)
+### Feature
+* Add provide cli option ([`be8ac90`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/be8ac90799a6f8afaf6541d86995b3d578d6cbbb))
+* **cd:** Improve linting: ([`8bf96c0`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/8bf96c00bc3d546d9b60fef44ccb494061b7da3a))
+
+### Fix
+* Fix test GH installing missing poetry dev deps ([`41edee9`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/41edee9bece54c859433efa73afd768d9663c2e5))
+* Fix test_cli import ([`ea49118`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/ea49118f24fd15efe2416e6ceb4f5c482a37042d))
+* **cd:** Fix documentation generation ([`10aafe8`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/10aafe819ba53b34271f846d5ea80b2a51d4f22f))
+
 ## v0.10.1 (2023-02-10)
 ### Fix
 * **lint:** Fix pyproject.toml ([`d3b52aa`](https://github.com/91nunocosta/python-package-cookiecutter/commit/d3b52aafb91aa4f54e0e4914319ae05d4c821766))

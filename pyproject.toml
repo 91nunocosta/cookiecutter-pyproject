@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cookiecutter-pyproject"
-version = "0.10.1"
+version = "0.11.0"
 description = ""
 authors = ["91nunocosta <91nunocosta@gmail.com>"]
 license = "MIT"
