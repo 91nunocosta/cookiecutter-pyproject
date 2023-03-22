@@ -29,7 +29,7 @@ def test_linting(cookies, extra_context):
 
     run(["git", "init"])
     run(["poetry", "check"])
-    run(["poetry", "install"])
+    run(["poetry", "install", "--with=lint"])
     run(["git", "add", "."])
     run(["poetry", "run", "pre-commit", "run", "--all-files"])
 
@@ -48,6 +48,6 @@ def test_testing(cookies):
         command_result = subprocess.run(command, cwd=result.project_path.absolute())
         assert command_result.returncode == 0
 
-    run(["poetry", "install"])
+    run(["poetry", "install", "--with=cd"])
     run(["poetry", "run", "tox"])
     run(["poetry", "run", "prototype-python-library", "10"])
