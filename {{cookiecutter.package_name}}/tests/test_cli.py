@@ -1,7 +1,7 @@
 """Test the command line interface for prototype-python-library"""
 from typer.testing import CliRunner
 
-from prototype_python_library.cli import app
+from {{ cookiecutter.module_name }}.cli import app
 
 runner = CliRunner()
 
