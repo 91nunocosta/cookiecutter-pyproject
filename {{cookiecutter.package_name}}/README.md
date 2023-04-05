@@ -35,14 +35,13 @@ pip install {{ cookiecutter.package_name }}
 
 For more details, read the
 [documentation](https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.package_name }}/{{ cookiecutter.module_name }}.html).
-
+{% if cookiecutter.opensource == "yes" %}
 ## Contributing
 
-{% if cookiecutter.opensource == "yes" %}
 If you want to contribute, please read the [contributing guidelines](./CONTRIBUTING.md)
 and [code of conduct](./CODE_OF_CONDUCT.md).
-
 {% else %}
+## Development
 
 ### Preparing the development environment
 
