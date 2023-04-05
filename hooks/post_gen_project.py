@@ -5,6 +5,7 @@ OPENSOURCE_FILES: List[Path] = [
     Path("CODE_OF_CONDUCT.md"),
     Path("CONTRIBUTING.md"),
     Path("LICENSE"),
+    Path(".markdownlintignore"),
     Path(".github/workflows/commitlint.yml"),
     Path(".github/workflows/release_package.yml"),
     Path(".github/workflows/docs.yml"),
