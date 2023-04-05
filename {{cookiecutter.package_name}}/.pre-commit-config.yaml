@@ -42,6 +42,8 @@ repos:
         types: [python]
         language: system
         entry: pylint
+        args:
+          - "--max-line-length=88"
       - id: mypy
         name: mypy
         types: [python]
