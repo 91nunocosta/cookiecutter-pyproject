@@ -21,15 +21,15 @@ jobs:
         run: poetry run cookiecutter . --no-input
 
       - name: Lock poetry dependencies
-        run: poetry --directory=prototype-python-library lock
+        run: poetry --directory=template-pyproject lock
 
       - name: Pushes to prototype Python project repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.APPLY_TOKEN }}
         with:
-          source-directory: prototype-python-library/
+          source-directory: template-pyproject/
           destination-github-username: '91nunocosta'
-          destination-repository-name: 'prototype-python-library'
+          destination-repository-name: 'template-pyproject'
           user-email: 91nunocosta@gmail.com
           target-branch: master
