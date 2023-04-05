@@ -1,7 +1,7 @@
 {
     "author_name": "Nuno Costa",
     "author_email": "91nunocosta@gmail.com",
-    "project_name": "Prototype Python Library",
+    "project_name": "Template PyProject",
     "project_description": "{{ cookiecutter.project_name }}",
     "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "module_name": "{{ cookiecutter.package_name.replace('-', '_') }}",

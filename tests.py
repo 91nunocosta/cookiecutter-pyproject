@@ -18,7 +18,7 @@ def test_linting(cookies, extra_context):
     result = cookies.bake(extra_context=extra_context)
     assert result.exit_code == 0
     assert result.exception is None
-    assert result.project_path.name == "prototype-python-library"
+    assert result.project_path.name == "template-pyproject"
     assert result.project_path.is_dir()
     print("scaffold finished!")
 
@@ -39,7 +39,7 @@ def test_testing(cookies):
     result = cookies.bake()
     assert result.exit_code == 0
     assert result.exception is None
-    assert result.project_path.name == "prototype-python-library"
+    assert result.project_path.name == "template-pyproject"
     assert result.project_path.is_dir()
     print("scaffold finished!")
 
@@ -50,4 +50,4 @@ def test_testing(cookies):
 
     run(["poetry", "install", "--with=cd"])
     run(["poetry", "run", "tox"])
-    run(["poetry", "run", "prototype-python-library", "10"])
+    run(["poetry", "run", "template-pyproject", "10"])
