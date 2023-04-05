@@ -8,7 +8,9 @@ description = "{{cookiecutter.project_description}}"
 authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 readme = "README.md"
 repository = "{{ cookiecutter.repository }}"
+{% if cookiecutter.opensource == "yes" %}
 documentation = "{{ cookiecutter.docs }}"
+{% endif -%}
 
 {% if cookiecutter.cli == "yes" -%}
 [tool.poetry.scripts]
@@ -36,11 +38,13 @@ optional = true
 pytest = "^7.2.1"
 pytest-cov = "^3.0.0"
 
+{% if cookiecutter.opensource == "yes" %}
 [tool.poetry.group.docs]
 optional = true
 
 [tool.poetry.group.docs.dependencies]
 pdoc = "^12.3.1"
+{% endif -%}
 
 [tool.poetry.group.cd]
 optional = true
@@ -53,6 +57,7 @@ tox = "^3.24.4"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+{% if cookiecutter.opensource == "yes" %}
 [tool.semantic_release]
 version_variable = [
     "{{ cookiecutter.module_name }}/__init__.py:__version__",
@@ -61,9 +66,5 @@ version_variable = [
 branch = "master"
 build_command = "pip install poetry && poetry build"
 upload_to_release = true
-{% if cookiecutter.opensource == "yes" %}
 upload_to_repository = true
-{% elif cookiecutter.opensource == "no" %}
-upload_to_repository = false
-repository_url = ""
 {% endif -%}
