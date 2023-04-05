@@ -3,7 +3,11 @@ from typing import List
 
 OPENSOURCE_FILES: List[Path] = [
     Path("CODE_OF_CONDUCT.md"),
+    Path("CONTRIBUTING.md"),
     Path("LICENSE"),
+    Path(".github/workflows/commitlint.yml"),
+    Path(".github/workflows/release_package.yml"),
+    Path(".github/workflows/docs.yml"),
 ]
 CLI_FILES: List[Path] = [
     Path(".") / "{{ cookiecutter.module_name }}" / "cli.py",
