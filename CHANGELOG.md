@@ -2,6 +2,18 @@
 
 <!--next-version-placeholder-->
 
+## v0.12.0 (2023-05-07)
+### Feature
+* Clean files for non-opensource ([`e122e4e`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/e122e4e6c037e314e35bf38c17d63ad7fde8e14e))
+* **github:** Fix lint workflow ([`fd0d04f`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/fd0d04fcbbc6a16b90e63a6f3f8fd4e68086ee4e))
+* **pre-commit:** Set mypy ignore-missing-imports ([`5721676`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/572167611b50ec020dfb2a929a79db3fa2fd95e2))
+* Set pylint max-line-length ([`9711a53`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/9711a53658d8d6e05cba843e7337c609e1d36905))
+* Change module_name ([`173ca51`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/173ca519b763974b54caf17fcddd71b793ac314c))
+
+### Fix
+* Fix ([`4095a10`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/4095a107ce2ebfbbdc2c0b4e60504bd5f23613b2))
+* Fix test_cli docstrings ([`264c00d`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/264c00dd19baa154223a6eb509443f440e9e6591))
+
 ## v0.11.0 (2023-03-22)
 ### Feature
 * Add provide cli option ([`be8ac90`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/be8ac90799a6f8afaf6541d86995b3d578d6cbbb))
