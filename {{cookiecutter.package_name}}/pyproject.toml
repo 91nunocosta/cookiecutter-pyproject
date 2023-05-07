@@ -67,3 +67,6 @@ build_command = "pip install poetry && poetry build"
 upload_to_release = true
 upload_to_repository = true
 {% endif -%}
+
+[tool.pylint]
+max-line-length = 88
