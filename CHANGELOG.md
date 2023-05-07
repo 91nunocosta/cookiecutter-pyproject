@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.13.0 (2023-05-07)
+### Feature
+* Split parameters release and docs ([`955d2e7`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/955d2e74bc8d57de64ee1afbd766b0685531585b))
+* Lint and tox config ([`a8e077a`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/a8e077a25129fab6eabc4ffbdba2a51c863ae078))
+
 ## v0.12.0 (2023-05-07)
 ### Feature
 * Clean files for non-opensource ([`e122e4e`](https://github.com/91nunocosta/cookiecutter-pyproject/commit/e122e4e6c037e314e35bf38c17d63ad7fde8e14e))
