@@ -4,6 +4,7 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches: [master]
     paths:
+      - .github/workflows/apply.yml
       - "*cookiecutter.package_name*/**"
 jobs:
   test:
@@ -33,3 +34,4 @@ jobs:
           destination-repository-name: 'template-pyproject'
           user-email: 91nunocosta@gmail.com
           target-branch: master
+          commit-message: 'chore: apply ORIGIN_COMMIT'
