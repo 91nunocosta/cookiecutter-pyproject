@@ -7,10 +7,17 @@ import pytest
 
 @pytest.mark.parametrize(
     "extra_context",
-    [{"opensource": "no"}, {"cli": "no"}],
+    [
+        {"opensource": "yes"},
+        {"release": "yes"},
+        {"docs": "yes"},
+        {"cli": "yes"},
+    ],
     ids=[
-        "non-opensource",
-        "without cli",
+        "opensource",
+        "release",
+        "docs",
+        "cli",
     ],
 )
 def test_linting(cookies, extra_context):
@@ -36,7 +43,7 @@ def test_linting(cookies, extra_context):
 
 def test_testing(cookies):
     """Test scaffolding a minimal Python package and then testing."""
-    result = cookies.bake()
+    result = cookies.bake(extra_context={"cli": "yes"})
     assert result.exit_code == 0
     assert result.exception is None
     assert result.project_path.name == "template-pyproject"
