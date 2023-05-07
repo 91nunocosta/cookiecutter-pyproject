@@ -7,7 +7,16 @@
 
 This repository provides a [cookiecutter](https://github.com/cookiecutter/cookiecutter)
 for Python projects.
-It generates the example project [91nunocosta/template-pyproject](https://github.com/91nunocosta/template-pyproject).
+It generates the template repo [91nunocosta/template-pyproject](https://github.com/91nunocosta/template-pyproject).
+
+It provides the following base features:
+
+* [poetry](https://python-poetry.org/) setup.
+* [pre-commit](https://pre-commit.com/) configuration for linting with multiple linters
+  (see [.pre-commit-config.yaml](./{{cookiecutter.package_name}}/.pre-commit-config.yaml)).
+* [tox](https://tox.wiki/en/latest/) configuration.
+* [GitHub workflow](https://docs.github.com/en/actions/using-workflows) for testing
+  with [tox](https://tox.wiki/en/latest/).
 
 ## Usage
 
@@ -17,22 +26,16 @@ To create a new Python project, run the following command, and answer all prompt
 cookiecutter https@github.com/91nunocosta/cookiecutter-pyproject.git
 ```
 
-## Project types
+### Extra features
 
-The repository provides the following project types.
-
-### Python API library
-
-The Python API library template provides the following:
-
-* [poetry](https://python-poetry.org/) setup
-* [pre-commit](https://pre-commit.com/) configuration for linting with multiple linters
-  (see [.pre-commit-config.yaml](./{{cookiecutter.package_name}}/.pre-commit-config.yaml))
-* [tox](https://tox.wiki/en/latest/) configuration
-* [GitHub workflows](https://docs.github.com/en/actions/using-workflows) to:
-  * lint commit messages according to [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/)
-  * test with [tox](https://tox.wiki/en/latest/)
-  * release the package with [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/)
+* `cli`: configures command script with [typer](https://typer.tiangolo.com/).
+* `opensource`: files for open-source projects (e.g., `LICENSE`, `CONTRIBUTING`, `CODE_OF_CONDUCT`).
+* `docs`: configures a
+  [GitHub workflow](https://docs.github.com/en/actions/using-workflows/about-workflows)
+  for publishing documentation into [GitHub pages](https://pages.github.com/)
+* `release`: configures a
+  [GitHub workflow](https://docs.github.com/en/actions/using-workflows/about-workflows)
+  for publishing the Python package into [pypi](https://pypi.org/).
 
 ### Contributing
 
