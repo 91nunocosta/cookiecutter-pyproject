@@ -1,4 +1,5 @@
 """Test python-package-cookiecuter."""
+
 import subprocess
 from typing import List
 
