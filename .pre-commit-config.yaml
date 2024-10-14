@@ -4,7 +4,7 @@
 repos:
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -14,7 +14,7 @@ repos:
         exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*"
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.4
+    rev: v2.3.0
     hooks:
       - id: codespell
         exclude: poetry.lock
@@ -25,32 +25,32 @@ repos:
       - id: jinjalint
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.29.0
+    rev: v1.35.1
     hooks:
       - id: yamllint
         exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*"
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.33.0
+    rev: v0.42.0
     hooks:
       - id: markdownlint
         exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*"
 
   - repo: https://github.com/PyCQA/isort
-    rev: 5.12.0
+    rev: 5.13.2
     hooks:
       - id: isort
         args: ["--profile", "black"]
         exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*"
 
   - repo: https://github.com/psf/black
-    rev: 23.1.0
+    rev: 24.10.0
     hooks:
       - id: black
         exclude: "\\{\\{cookiecutter.package_name\\}\\}/.*|hooks"
 
   - repo: https://github.com/PyCQA/prospector
-    rev: v1.9.0
+    rev: v1.12.1
     hooks:
       - id: prospector
         args:
@@ -72,7 +72,7 @@ repos:
           - github.com/rhysd/actionlint/cmd/actionlint@latest
 
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v2.42.1
+    rev: v3.29.1
     hooks:
       - id: commitizen
         stages: [commit-msg]
